@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: iran;
+    src: url(fonts/IRANSansWeb.woff2) format(woff);
+
+}
+
+body,
+html {
+    font-family: iran;
+    background-color: #faf4f4;
+    font-size: 13px;
+  
+  
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+.top-access{
+    font-size: 17px;
+    padding:20px 8px ;
+}
+.top-access a{
+    font-size: 17px;
+}
+header .top-menu{
+z-index: 100;
+height: 57px;
+position: relative;
+}
+header .main-menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header .main-menu ul li {
+    display: inline-block;
+    margin: 4px;
+    position: relative;
+}
+
+header .main-menu ul li a {
+    display: inline-block;
+    padding: 15px  5px;
+    color: #eee;
+    position: relative;
+}
+
+header .main-menu ul li>ul>li>a {
+    position: relative;
+right: 0;
+transition: all 0.5s ease;
+}
+
+header .main-menu ul li>ul>li>a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    top: 13px;
+    right: 0;
+background-color: #d80d0d;
+transition: all 0.5s ease;
+}
+header .main-menu ul li>ul>li>a:hover{
+    right: 8px;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li>ul>li>a:hover::before {
+    position: absolute;
+    content: "";
+    width: 5PX;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li ul {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    width: 200px;
+    background-color: #dddddd;
+    text-align: right;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    border-radius: 8px 0px 8px 8px;
+    z-index: 10;
+}
+
+header .main-menu ul>li:hover>ul {
+    opacity: 1;
+padding: 8px;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li ul li {
+    display: block;
+
+}
+
+header .main-menu ul li ul li a {
+    padding: 5px 10px;
+    color: #333;
+    display: block;
+   
+}
+
+header .main-menu ul li>ul>li>ul {
+    right: 100%;
+    top: -13px;
+}
+
+header .slider-box{
+    margin-top: -57px;
+position: relative;
+}
+header .slider-box::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+   
+    width: 100%;
+    height: 100%;
+background: #0000003b;
+}
+.product-item figure{
+    height: 270px;
+}
+.product-item figure img{
+    height: 270px;
+    object-fit: contain;
+    border-bottom: 1px solid #000;
+}
+.product-item figure figcaption{
+    top:0;
+    right: 0;
+    background-color: #e4e1e185;
+    padding-top: 80px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.product-item figure:hover figcaption{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.product-item figure figcaption ul li a{
+    width: 40px;
+    height: 40px;
+line-height: 44px;
+font-size: 14px;
+background-color: rgb(252, 252, 252);
+transition: all 0.3s ease;
+border-radius: 10px;
+}
+.product-item figure figcaption ul li  a:hover{
+    color: #ff0707;
+    background-color:#14c070;
+transition: all 0.3s ease;
+border-radius: 10px;
+}
+.product-item h5{
+line-height: 1.8;
+font-size: 17px;
+height: 55px;
+color: #333;
+}
+.product-item p{
+    color: #000;
+    height: 37px;
+   
+
+}
+.product-item .product-rate i{
+font-size: 13px;
+} 
+.product-item .product-price{
+    
+    font-size: 13px;
+}
+
