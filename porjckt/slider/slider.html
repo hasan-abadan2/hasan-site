@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div style="width:500px; height:200px; margin: auto;">
+        <img src="hh/1.png" id="c" style="width: 700px; height: 300PX;">
+    </div>
+
+    <script>
+        var i=0;
+        setInterval(function () {
+            document.getElementById('c').setAttribute('src','hh/'+i+'.png')
+            i= (i+1)%4
+        }, 500)
+    </script>
+</body>
+
+</html>
